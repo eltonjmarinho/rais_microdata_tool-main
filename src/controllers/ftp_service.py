@@ -14,6 +14,10 @@ class FTPService:
         try:
             self.queue.put(("LOG", "Conectando ao servidor FTP..."))
             ftp = ftplib.FTP(self.FTP_HOST, timeout=30)
+            # Alguns servidores FTP retornam nomes com codificações diferentes
+            # (ex: latin-1 / cp1252). Forçar uma codificação permissiva evita
+            # erros de decodificação como "'utf-8' codec can't decode byte".
+            ftp.encoding = 'latin-1'
             ftp.login()
             self.queue.put(("LOG", "Obtendo lista de diretórios..."))
             ftp.cwd(self.FTP_PATH)
