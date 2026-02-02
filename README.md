@@ -10,7 +10,7 @@ Esta é uma ferramenta de desktop para baixar, processar e importar microdados d
 -   **Processamento e Importação:**
     -   Lê os arquivos de texto extraídos.
     -   Permite ao usuário selecionar quais colunas de dados deseja importar.
-    -   Importa os dados selecionados para um banco de dados SQLite (`data/rais.db`) para fácil acesso e análise.
+    -   Importa os dados selecionados para um banco de dados SQLite (`data/rais.db`) para fácil acesso e análise. 
 
 ## Instalação
 
