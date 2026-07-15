@@ -4,7 +4,7 @@ Esta é uma ferramenta de desktop para baixar, processar e importar microdados d
 
 ## Funcionalidades
 
--   **Navegação:** Conecta-se ao servidor FTP do Ministério do Trabalho e Previdência para listar os arquivos e anos disponíveis.
+-   **Navegação:** Conecta-se ao servidor FTP do Ministério do Trabalho para listar os arquivos e anos disponíveis.
 -   **Download:** Baixa os arquivos de dados selecionados (formato `.7z`).
 -   **Descompressão:** Extrai automaticamente os arquivos de texto (`.txt`) de dentro dos arquivos `.7z`.
 -   **Processamento e Importação:**
